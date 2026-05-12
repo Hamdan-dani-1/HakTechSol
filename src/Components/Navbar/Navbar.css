@@ -1,0 +1,108 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  border-bottom: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  position: relative;
+  z-index: 2001;
+  cursor: pointer;
+  color: var(--text-main, #fff);
+}
+
+.logo .dot { 
+  color: var(--primary-color, #3B82F6); 
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  color: var(--text-main, #fff);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover { 
+  color: var(--primary-color, #3B82F6); 
+}
+
+.nav-cta {
+  background: linear-gradient(135deg, var(--primary-color, #3B82F6), var(--accent-color, #8B5CF6));
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px var(--primary-glow, rgba(59, 130, 246, 0.4));
+}
+
+/* Mobile Configurations */
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-main, #fff);
+  cursor: pointer;
+  position: relative;
+  z-index: 2001;
+  padding: 0.5rem;
+}
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(3, 5, 8, 0.98);
+  z-index: 1500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.mobile-nav-links a {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-main, #fff);
+  text-decoration: none;
+}
+
+.mobile-cta {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  padding: 1rem 3rem;
+}
+
+@media (max-width: 868px) {
+  .desktop-only { display: none; }
+  .mobile-toggle { display: block; }
+}

@@ -1,0 +1,19 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+section {
+  padding: 80px 40px;
+}
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #111;
+}
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+}
